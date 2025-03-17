@@ -7,6 +7,6 @@ edition = "2021"
 
 
 [workspace]
-members =[
+members =[ "session1/authentication",
     "session1/hello-world"
     , "session1/variables"]
