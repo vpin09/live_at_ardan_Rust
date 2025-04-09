@@ -9,4 +9,4 @@ edition = "2021"
 [workspace]
 members =[ "session1/authentication",
     "session1/hello-world"
-    , "session1/variables"]
+    , "session1/login", "session1/variables"]
