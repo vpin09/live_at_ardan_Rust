@@ -8,7 +8,6 @@ fn main() {
         let mut username = read_line();
         println!("please enter password");
         let mut password = read_line();
-
         match login(&username, &password) {
             Some(LoginAction::Granted(role)) => {
                 match role {
@@ -18,12 +17,11 @@ fn main() {
                 break;
             }
             Some(LoginAction::Denied) => {}
-            None=>{
+            None => {
                 println!("new User please register");
                 break;
             }
         }
-
         tries += 1;
         if tries >= 3 {
             println!("login attempt limit exceed");
